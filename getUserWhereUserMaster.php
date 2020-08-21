@@ -20,10 +20,10 @@ if (!$link->set_charset("utf8")) {
 if (isset($_GET)) {
 	if ($_GET['isAdd'] == 'true') {
 				
-		$User = $_GET['User'];
+		$user = $_GET['username'];
 		
 
-		$result = mysqli_query($link, "SELECT * FROM datauser WHERE User = '$User'");
+		$result = mysqli_query($link, "SELECT * FROM datauser WHERE username = '$user'");
 
 		if ($result) {
 

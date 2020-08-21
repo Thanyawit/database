@@ -18,7 +18,7 @@ if (!$link->set_charset("utf8")) {
     exit();
 	}
 
-	$result = mysqli_query($link, "SELECT * FROM datauser");
+	$result = mysqli_query($link, "SELECT * FROM durable");
    
 	while($row=mysqli_fetch_assoc($result)){
 	$output[]=$row;
